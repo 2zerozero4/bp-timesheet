@@ -189,7 +189,7 @@ function AddTurno() {
                 <select
                   value={selectedJobId}
                   onChange={(e) => setSelectedJobId(e.target.value)}
-                  className="input pl-10"
+                  className="input input-with-icon"
                   required
                 >
                   <option value="">Seleziona un lavoro</option>
@@ -215,7 +215,7 @@ function AddTurno() {
                   onChange={(date: Date) => setData(date)}
                   locale="it"
                   dateFormat="EEEE dd/MM/yyyy"
-                  className="input pl-10"
+                  className="input input-with-icon"
                 />
               </div>
             </div>
@@ -232,7 +232,7 @@ function AddTurno() {
                   type="time"
                   value={oraInizio}
                   onChange={(e) => setOraInizio(e.target.value)}
-                  className="input pl-10"
+                  className="input input-with-icon"
                   required
                 />
               </div>
@@ -250,7 +250,7 @@ function AddTurno() {
                   type="time"
                   value={oraFine}
                   onChange={(e) => setOraFine(e.target.value)}
-                  className="input pl-10"
+                  className="input input-with-icon"
                   required
                 />
               </div>
@@ -304,4 +304,4 @@ function AddTurno() {
   );
 }
 
-export default AddTurno
+export default AddTurno;
